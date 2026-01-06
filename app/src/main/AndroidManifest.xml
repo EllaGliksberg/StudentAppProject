@@ -21,6 +21,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".NewStudentActivity" />
+        <activity android:name=".StudentDetailsActivity" />
+        <activity android:name=".EditStudentActivity" />
+
     </application>
 
 </manifest>

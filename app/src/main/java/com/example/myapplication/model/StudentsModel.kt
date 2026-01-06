@@ -4,8 +4,7 @@ object StudentsModel {
     val students = mutableListOf<Student>()
 
     init {
-        students.add(Student("Ella Gliksberg", "123456789", false, ""))
-        students.add(Student("John Doe", "987654321", true, ""))
-        students.add(Student("Jane Smith", "111222333", false, ""))
+        students.add(Student("Ella Gliksberg", "123456789", false, "", "Ramat Hasharon", "050-1234567"))
+        students.add(Student("Noa Nufussi", "987654321", true, "", "Raanana", "052-9876543"))
     }
 }
