@@ -32,6 +32,7 @@ class StudentRecyclerAdapter(private val students: List<Student>) : RecyclerView
         holder.studentName.text = currentStudent.name
         holder.studentId.text = currentStudent.id
         holder.studentCheckBox.isChecked = currentStudent.isChecked
+        holder.studentAvatar.setImageResource(R.mipmap.ic_launcher) // Set a default image
 
         // Listeners
         holder.itemView.setOnClickListener {
