@@ -22,8 +22,10 @@ class StudentListActivity : AppCompatActivity() {
         adapter = StudentRecyclerAdapter(StudentsModel.students)
         studentList.adapter = adapter
 
-        adapter.onItemClickListener = {
-            // TODO: Navigate to student details screen
+        adapter.onItemClickListener = { position ->
+            val intent = Intent(this, StudentDetailsActivity::class.java)
+            intent.putExtra(StudentDetailsActivity.EXTRA_STUDENT_POSITION, position)
+            startActivity(intent)
         }
 
         adapter.onCheckboxClickListener = { position, isChecked ->
